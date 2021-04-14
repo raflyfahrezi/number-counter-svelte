@@ -1,7 +1,17 @@
 <script>
+    //import
     import Button from './components/Button.svelte'
 
-    export let name
+    // initialize variables
+    let name = ''
+
+    // functions
+    const plusNumberHandler = () => {}
+
+    const minusNumberHandler = () => {}
+
+    // export variables
+    export { name }
 </script>
 
 <main>
@@ -11,8 +21,8 @@
         how to build Svelte apps.
     </p>
     <div>
-        <Button>Plus Number</Button>
-        <Button>Minus Number</Button>
+        <Button onClickHandler={plusNumberHandler}>Plus Number</Button>
+        <Button onClickHandler={minusNumberHandler}>Minus Number</Button>
     </div>
 </main>
 
