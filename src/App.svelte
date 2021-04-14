@@ -6,9 +6,27 @@
     let name = ''
 
     // functions
-    const plusNumberHandler = () => {}
+    const plusNumberHandler = () => {
+        if (isNaN(name)) {
+            name = 1
+            return
+        }
 
-    const minusNumberHandler = () => {}
+        name++
+    }
+
+    const minusNumberHandler = () => {
+        if (isNaN(name)) {
+            name = 0
+            return
+        }
+
+        if (name === 0) {
+            return
+        }
+
+        name--
+    }
 
     // export variables
     export { name }
